@@ -14,41 +14,43 @@
 
 <div class="header">
     <h1 class="h1">GYM</h1>
-</div>
-
-<div class="topnav">
-  <a href="/lehuzas.html">Felső lehúzás</a>
-  <a href="/Fekvotamasz.html">Fekvőtámasz</a>
-  <a href="/Guggolas.html">Guggolás padra</a>
-  <a href="/Evezes.html">Evezés gépen ülve</a>  
-  <a href="/Kitores.html">Kitörés</a>
-  <a href="/Vallbolnyomas.html">Vállból nyomás</a>
-  <a href="/Felhuzas.html">Felhúzás</a> 
-  <a href="/tolodzkodas.html">Tolódzkodás</a>
-</div>
-   
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">Vissza az elejére</button>
-<script>
     
-  var mybutton = document.getElementById("myBtn");
-  
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  </script>
+</div>
 
+
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnavi">
+  <a href="#home" class="active">Yellow</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+      <a href="/lehuzas.html">Felső lehúzás</a>
+      <a href="/Fekvotamasz.html">Fekvőtámasz</a>
+      <a href="/Guggolas.html">Guggolás padra</a>
+      <a href="/Evezes.html">Evezés gépen ülve</a>  
+      <a href="/Kitores.html">Kitörés</a>
+      <a href="/Vallbolnyomas.html">Vállból nyomás</a>
+      <a href="/Felhuzas.html">Felhúzás</a> 
+      <a href="/tolodzkodas.html">Tolódzkodás</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
